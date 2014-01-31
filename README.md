@@ -1,4 +1,4 @@
-***Note*** : Work under progress.. All files created properly, but getting some errors in setting import path and directory structure.
+***Note*** : Work under progress.. All files created properly, but errors in setting directory structure.
 
 
 
