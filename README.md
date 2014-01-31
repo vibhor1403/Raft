@@ -1,7 +1,3 @@
-***Note*** : Work under progress.. All files created properly, could not figure out how to give relative path to file server.go
-
-
-
 Raft
 =========
 
@@ -25,6 +21,7 @@ To run a single instance of server, use:
 ```sh
 Raft -pid=<pid-of-this-server>
 ```
+***Assumption*** : config.json is present in the same place where the bash terminal is, when this command is issued.
 This pid should be present in the config.json file. This will start the server and broadcast a message to all its peers.
 
 JSON format
