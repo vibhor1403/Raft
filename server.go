@@ -13,7 +13,7 @@ func main() {
 	// parse argument flags and get this server's id into myid
 	mypid := flag.Int("pid", 0, "Pid of my own system")
 	flag.Parse()
-	server := cluster.New(*mypid /* config file */, "/home/vibhor/config.json")
+	server := cluster.New(*mypid /* config file */, "./config.json")
 
 	// wait for keystroke to start.
 	r := bufio.NewReader(os.Stdin)
