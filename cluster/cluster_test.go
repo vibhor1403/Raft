@@ -52,7 +52,7 @@ func Test_Cluster_Load(t *testing.T) {
 	total := 5
 	var server [5]cluster.Server
 	for i := 0; i < total; i++ {
-		server[i] = cluster.New(i+1, "/home/vibhor/config.json")
+		server[i] = cluster.New(i+1, "../config.json")
 	}
 
 	// Random messages
@@ -137,7 +137,7 @@ func Test_Cluster_Broadcast_Only(t *testing.T) {
 	total := 5
 	var server [5]cluster.Server
 	for i := 0; i < total; i++ {
-		server[i] = cluster.New(i+1, "/home/vibhor/config.json")
+		server[i] = cluster.New(i+1, "../config.json")
 	}
 
 	// Random messages
@@ -203,7 +203,7 @@ func Test_Cluster_Cyclic_Dependencies(t *testing.T) {
 	total := 5
 	var server [5]cluster.Server
 	for i := 0; i < total; i++ {
-		server[i] = cluster.New(i+1, "/home/vibhor/config.json")
+		server[i] = cluster.New(i+1, "../config.json")
 	}
 
 	// Random messages
@@ -248,7 +248,7 @@ func Test_Cluster_Availability(t *testing.T) {
 	var server [5]cluster.Server
 	// server[4] is not started now.. (corresponding to pid=5)
 	for i := 0; i < total-1; i++ {
-		server[i] = cluster.New(i+1, "/home/vibhor/config.json")
+		server[i] = cluster.New(i+1, "../config.json")
 	}
 
 	// Random messages
@@ -292,7 +292,7 @@ func Test_Cluster_Message_Length(t *testing.T) {
 	total := 5
 	var server [5]cluster.Server
 	for i := 0; i < total; i++ {
-		server[i] = cluster.New(i+1, "/home/vibhor/config.json")
+		server[i] = cluster.New(i+1, "../config.json")
 	}
 
 	message := make([]byte, 1000000)
