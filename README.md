@@ -21,8 +21,10 @@ To run a single instance of server, use:
 ```sh
 Raft -pid=<pid-of-this-server>
 ```
-***Assumption*** : config.json is present in the same place where the bash terminal is, when this command is issued.
+
 This pid should be present in the config.json file. This will start the server and broadcast a message to all its peers.
+
+***Assumption*** : config.json is present in the same place where the bash terminal is, when this command is issued.
 
 JSON format
 ----------------
