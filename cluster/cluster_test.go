@@ -265,7 +265,7 @@ func Test_Cluster_Availability(t *testing.T) {
 
 	time.Sleep(time.Second)
 
-	server[total-1] = cluster.New(total, "/home/vibhor/config.json")
+	server[total-1] = cluster.New(total, "../config.json")
 
 	wg := new(sync.WaitGroup)
 	for i := 0; i< total; i++ {
