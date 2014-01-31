@@ -1,4 +1,4 @@
-***Note*** : Work under progress.. All files created properly, but errors in setting directory structure.
+***Note*** : Work under progress.. All files created properly, could not figure out how to give relative path to file server.go
 
 
 
