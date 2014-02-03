@@ -39,7 +39,7 @@ Below is the json sample file, between the lines containing *
 
 import (
 	"encoding/json"
-	"github.com/vibhor1403/assignment2/cluster"
+	"github.com/vibhor1403/Raft/cluster"
 	"math/rand"
 	"testing"
 	"sync"
