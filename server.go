@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/vibhor1403/assignment2/cluster"
+	"github.com/vibhor1403/Raft/cluster"
 	"os"
 	"flag"
 )
