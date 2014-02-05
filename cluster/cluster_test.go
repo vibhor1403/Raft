@@ -81,7 +81,7 @@ func Test_Cluster_Load(t *testing.T) {
 		go checkInput(server[i], &count[i], wg)
 	}
 
-	for j := 0; j < 10; j++ {
+	for j := 0; j < 100000; j++ {
 		// Random sender
 		x := rand.Intn(total)
 		// Random reciever (pids[y])
